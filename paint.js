@@ -12,14 +12,7 @@ function injectStyles(rule) {
  */
 let crossTrains = document.getElementsByClassName("xt-day");
 
-
-let runningBlue = "#4D7EA8";
-let cyclingOrange = "#E9724C";
-let crosstrainGreen = "#354c26";
-
-let circleAnchorHTML = "<g transform=\"translate(0, 30)\" class=\"leaf expanded\"><circle class=\"activity\" id=\"activity1\" r=\"15\" fill=\""
-    + crosstrainGreen
-    + "\"></circle></g>";
+let circleAnchorHTML = "<g transform=\"translate(0, 30)\" class=\"leaf expanded\"><circle class=\"activity\" id=\"activity1\" r=\"15\" fill=var(--crosstrain-green)></circle></g>";
 
 
 // Paint circles for cross-train activities:
@@ -31,5 +24,5 @@ for (let i = 0, l = crossTrains.length; i < l; i++) {
 /**
  * Inject missing CSS
  */
-injectStyles('.activity-sport-run, .activity-type-run {fill: var(--running-blue); stroke: var(--running-blue)}');
-injectStyles('.activity-sport-ride, .activity-type-ride, .activity-type-ebikeride, .activity-type-virtualride {fill: var(--cycling-orange);stroke: var(--cycling-orange)}');
+injectStyles('.activity-sport-run, .activity-type-run {fill: var(--running-blue-light); stroke: var(--running-blue-dark)}');
+injectStyles('.activity-sport-ride, .activity-type-ride, .activity-type-ebikeride, .activity-type-virtualride {fill: var(--cycling-orange-light);stroke: var(--cycling-orange-dark)}');

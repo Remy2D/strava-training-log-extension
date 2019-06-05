@@ -1,25 +1,25 @@
 :root {
-    --running-blue: #4D7EA8;
-    --cycling-orange: #E9724C;
-    --crosstrain-green: #354c26;
+    --running-blue-dark: #4D7EA8;
+    --running-blue-light: #78baf3;
+    --cycling-orange-dark: #E9724C;
+    --cycling-orange-light: #ff9c7c;
+    --crosstrain-green: #326331;
 }
 
 dd.run-type span.key-chip {
-    background: var(--running-blue)
+    background: var(--running-blue-light)
 }
 
 dd.ride-type span.key-chip {
-    background: var(--cycling-orange)
+    background: var(--cycling-orange-light)
 }
 
 .activity-sport-run, .activity-type-run {
-    fill: var(--running-blue);
-    stroke: var(--running-blue)
+    fill: var(--running-blue-light);
+    stroke: var(--running-blue-dark)
 }
 
 .activity-sport-ride, .activity-type-ride, .activity-type-ebikeride, .activity-type-virtualride {
-    fill: var(--cycling-orange);
-    stroke: var(--cycling-orange)
+    fill: var(--cycling-orange-light);
+    stroke: var(--cycling-orange-dark)
 }
-
-.activity-sport-ride, .activity-type-ride, .activity-type-ebikeride, .activity-type-virtualride {fill: var(--cycling-orange);stroke: var(--cycling-orange)}
