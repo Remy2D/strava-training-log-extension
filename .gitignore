@@ -1,0 +1,6 @@
+### JetBrains products ###
+.idea
+*.iws
+*.iml
+*.ipr
+

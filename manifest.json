@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Strava Training Log Extension",
+  "description": "Provides custom style to Strava's training log page with correctly marked cross-training and more.",
+  "version": "1.0.0",
+  "background": {
+    "scripts": [
+      "lib/jquery-3.4.1.min.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "js": [
+        "lib/jquery-3.4.1.min.js",
+        "paint.js"
+      ],
+      "css": [
+        "colors.css"
+      ],
+      "matches": [
+        "https://www.strava.com/athletes/*/training/log"
+      ]
+    }
+  ]
+}
