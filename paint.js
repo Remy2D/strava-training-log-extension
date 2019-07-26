@@ -12,8 +12,11 @@ function injectStyles(rule) {
  */
 let crossTrains = document.getElementsByClassName("xt-day");
 
-let circleAnchorHTML = "<g transform=\"translate(0, 30)\" class=\"leaf expanded\"><circle class=\"activity\" id=\"activity1\" r=\"15\" fill=var(--crosstrain-green)></circle></g>";
-
+let circleAnchorHTML = `
+<g transform="translate(0, 50)" class="leaf expanded">
+    <circle class="activity" id="activity1" r="15" fill=var(--crosstrain-green)></circle>
+</g>
+`;
 
 // Paint circles for cross-train activities:
 for (let i = 0, l = crossTrains.length; i < l; i++) {
